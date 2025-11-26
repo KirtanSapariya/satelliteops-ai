@@ -1,0 +1,39 @@
+{
+  "test_cases": [
+    {
+      "name": "status_check",
+      "input": "Show satellite status",
+      "expected_agents": ["telemetry_monitor"],
+      "max_latency_ms": 5000,
+      "success_criteria": "Returns nominal status for all satellites"
+    },
+    {
+      "name": "anomaly_detection",
+      "input": "Detect anomalies",
+      "expected_agents": ["telemetry_monitor", "anomaly_detector"],
+      "max_latency_ms": 10000,
+      "success_criteria": "Identifies injected thermal anomaly"
+    },
+    {
+      "name": "orbit_prediction",
+      "input": "Predict orbit for next 24 hours",
+      "expected_agents": ["orbit_predictor"],
+      "max_latency_ms": 8000,
+      "success_criteria": "Returns orbital trajectory with position and velocity"
+    },
+    {
+      "name": "collision_check",
+      "input": "Check collision risks",
+      "expected_agents": ["orbit_predictor", "collision_avoidance"],
+      "max_latency_ms": 15000,
+      "success_criteria": "Detects conjunction event with recommendations"
+    },
+    {
+      "name": "comprehensive_report",
+      "input": "Generate mission report",
+      "expected_agents": ["telemetry_monitor", "report_agent"],
+      "max_latency_ms": 12000,
+      "success_criteria": "Returns comprehensive mission report with metrics"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "anomalies": [
+    {
+      "timestamp": "2025-11-18T12:00:00Z",
+      "satellite_id": "LEO-SAT-001",
+      "type": "thermal",
+      "metric": "battery_temperature",
+      "value": 58.2,
+      "threshold": 45.0,
+      "severity": "HIGH",
+      "description": "Battery temperature exceeds safe operating threshold"
+    },
+    {
+      "timestamp": "2025-11-18T15:30:00Z",
+      "satellite_id": "LEO-SAT-002",
+      "type": "power",
+      "metric": "power_output",
+      "value": 280,
+      "threshold": 400,
+      "severity": "MEDIUM",
+      "description": "Power output below expected range, possible solar panel degradation"
+    },
+    {
+      "timestamp": "2025-11-18T18:45:00Z",
+      "satellite_id": "LEO-SAT-003",
+      "type": "attitude",
+      "metric": "attitude_error",
+      "value": 2.5,
+      "threshold": 0.5,
+      "severity": "HIGH",
+      "description": "Attitude control system showing significant drift"
+    }
+  ]
+}
